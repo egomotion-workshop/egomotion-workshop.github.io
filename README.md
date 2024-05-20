@@ -1,1 +1,1 @@
-# egomotion-workshop.github.io
+# First EgoMotion Workshop - Egocentric Body Motion Tracking, Synthesis and Action Reconition

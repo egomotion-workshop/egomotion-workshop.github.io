@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="egocentric, body motion, body tracking, motion synthesis, action recognition"
+    />
+    <title>EgoMotion Workshop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="foobar/foo.jpg" alt="teaser figure" />
+      <p>the 1st Workshop on</p>
+      <h1 style="color: #f4976c; font-size: 28px">EgoMotion</h1>
+      <h1 style="color: #d2fdff; font-size: 38px">
+        Egocentric Body Motion Tracking, Synthesis and Action Recognition
+      </h1>
+      <p>
+        <i class="fa-solid fa-calendar-day fa-beat" style="color: #f4976c"></i>
+        &nbsp;June 18th 13:30 - 18:00 PST
+      </p>
+      <p>
+        <i class="fa-solid fa-location-dot fa-beat" style="color: #f4976c"></i
+        >&nbsp;CVPR 2024, Seattle WA, USA
+      </p>
+    </div>
+
+    <!--
+    <nav>
+      <ul>
+        <li><a href="#context">Context</a></li>
+        <li><a href="#speaker">Invited Speakers</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#organizer">Organizers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    -->
+
+    <main>
+      <section id="overview" class="dark-block">
+        <div class="overview-container">
+          <h2>Context</h2>
+          <p>
+            The EgoMotion workshop focuses on in-the-wild egocentric full-body
+            motion understanding from data captured by wearable devices. We
+            address three major problems for full-body motion -- tracking,
+            synthesis and action recognition. The scope combines several topics
+            and sub-fields that have grown in importance over the last years,
+            and aims to bring these fields together in a common forum. Towards
+            egocentric full-body tracking, motion synthesis and action
+            recognition, we will focus on, but not limited to, algorithms
+            developed for the following inputs.
+          </p>
+          <ul>
+            <li>
+              <strong>Videos</strong> - from head-mounted cameras or external
+              cameras.
+            </li>
+            <li>
+              <strong>Non-visual body-worn sensors</strong> - inertial
+              measurement units (IMUs), electromagnetic (EM) sensors,
+              barometers, magnetometers, audio etc.
+            </li>
+            <li>
+              <strong>Derived data</strong> - device trajectories, eye gazes, 3D
+              environment reconstructions, semantic scene representation, text
+              description, narration etc.
+            </li>
+          </ul>
+          <p>
+            In addition to algorithms, the workshop will promote multiple recent
+            datasets and associated challenges to accelerate research in this
+            field.
+          </p>
+        </div>
+      </section>
+
+      <section id="speaker" class="light-block">
+        <div class="speaker-container">
+          <h2>Invited Speakers</h2>
+        </div>
+        <div class="speaker-container">
+          <div>
+            <img src="people/christian.jpg" alt="Christian Theobalt" />
+            <div>
+              <a href="https://people.mpi-inf.mpg.de/~theobalt/"
+                >Christian Theobalt</a
+              >
+            </div>
+            <div class="inst">Professor<br />MPI-INF</div>
+          </div>
+          <div>
+            <img src="people/karen.jpg" alt="Karen Liu" />
+            <div>
+              <a href="https://profiles.stanford.edu/c-karen-liu"
+                >C. Karen Liu</a
+              >
+            </div>
+            <div class="inst">
+              Professor<br />
+              Stanford University
+            </div>
+          </div>
+          <div lang="de">
+            <img src="people/siyu.jpg" alt="Siyu Tang" />
+            <div>
+              <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html">
+                Siyu Tang</a
+              >
+            </div>
+            <div class="inst">
+              Assistant Professor<br />
+              ETH Zürich
+            </div>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <div lang="de">
+            <img src="people/gerard.png" alt="Gerard Pons-Moll" />
+            <div>
+              <a href="https://jhugestar.github.io/">Gerard Pons-Moll</a>
+            </div>
+            <div class="inst">
+              Professor<br />
+              University of Tübingen
+            </div>
+          </div>
+          <div>
+            <img src="people/hanbyul.jpg" alt="Hanbyul Joo" />
+            <div>
+              <a href="https://jhugestar.github.io/">Hanbyul Joo</a>
+            </div>
+            <div class="inst">
+              Assistant Professor<br />Seoul National University
+            </div>
+          </div>
+          <div>
+            <img src="people/manuel.jpg" alt="Manuel Kaufmann" />
+            <div>
+              <a href="https://ait.ethz.ch/people/kamanuel">Manuel Kaufmann</a>
+            </div>
+            <div class="inst">Postdoc<br />ETH Zurich</div>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <div>
+            <img src="people/fangzhou.jpg" alt="Fangzhou Hong" />
+            <div>
+              <a href="https://hongfz16.github.io/">Fangzhou Hong</a>
+            </div>
+            <div class="inst">
+              Ph.D Student<br />
+              NTU
+            </div>
+          </div>
+          <div>
+            <img src="people/xinyu.jpg" alt="Xinyu Yi" />
+            <div>
+              <a href="https://xinyu-yi.github.io/">Xinyu Yi</a>
+            </div>
+            <div class="inst">Ph.D Student<br />Tshinghua University</div>
+          </div>
+          <div>
+            <img src="people/jiaman.jpg" alt="Jiaman Li" />
+            <div>
+              <a href="https://lijiaman.github.io/">Jiaman Li</a>
+            </div>
+            <div class="inst">Ph.D Student<br />Stanford University</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="agenda" class="dark-block">
+        <div class="agenda-container">
+          <h2>Schedule</h2>
+        </div>
+        <div class="agenda-container">
+          <table>
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 20%" />
+              <col style="width: 60%" />
+            </colgroup>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Speaker</th>
+            </tr>
+            <tr>
+              <td>13:30 - 13:45</td>
+              <td>Opening</td>
+              <td>Richard Newcombe</td>
+            </tr>
+            <tr>
+              <td>13:45 - 14:15</td>
+              <td>Invited Talk</td>
+              <td>Siyu Tang</td>
+            </tr>
+            <tr>
+              <td>14:15 - 14:45</td>
+              <td>Invited Talk</td>
+              <td>Christian Theobalt</td>
+            </tr>
+            <tr>
+              <td>14:45 - 15:15</td>
+              <td>Invited Talk</td>
+              <td>Hanbyul Joo</td>
+            </tr>
+            <tr>
+              <td>15:15 - 15:30</td>
+              <td>Break</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>15:30 - 16:00</td>
+              <td>Invited Talk</td>
+              <td>Lingni Ma, Yuting Ye</td>
+            </tr>
+            <tr>
+              <td>16:00 - 16:30</td>
+              <td>Invited Talk</td>
+              <td>C. Karen Liu, Jiaman Li</td>
+            </tr>
+            <tr>
+              <td>16:30 - 17:00</td>
+              <td>Invited Talk</td>
+              <td>Gerard Pons-Moll</td>
+            </tr>
+            <tr>
+              <td>17:00 - 17:15</td>
+              <td>Break</td>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <td>17:15 - 17:55</td>
+              <td>Deepdives</td>
+              <td>Xinyu Yi, Manuel Kaufmann, Fangzhou Hong</td>
+            </tr>
+            <!--
+            <tr>
+              <td>16:00 - 16:30</td>
+              <td>Deepdive</td>
+              <td>Manuel Kaufmann</td>
+            </tr>
+            <tr>
+              <td>16:30 - 17:00</td>
+              <td>Deepdive</td>
+              <td>Fangzhou Hong</td>
+            </tr>
+            -->
+            <tr>
+              <td>17:00 - 17:15</td>
+              <td>Closing</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section id="organizer" class="light-block">
+        <h2>Organizers</h2>
+        <div class="organizer-container">
+          <div>
+            <img src="people/lingni.jpg" alt="Lingni Ma" />
+            <div>
+              <a
+                href="https://scholar.google.nl/citations?user=eUAgpwkAAAAJ&hl=en"
+                >Lingni Ma</a
+              >
+            </div>
+            <div class="inst">Research Scientist<br />Meta</div>
+          </div>
+          <div>
+            <img src="people/richard.jpg" alt="Richard Newcombe" />
+            <div>
+              <a
+                href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en"
+                >Richard Newcombe</a
+              >
+            </div>
+            <div class="inst">VP, Research Scientist<br />Meta</div>
+          </div>
+          <div>
+            <img src="people/yuting.jpg" alt="Yuting Ye" />
+            <div>
+              <a href="http://yutingye.info/">Yuting Ye </a>
+            </div>
+            <div class="inst">Research Scientist<br />Meta</div>
+          </div>
+          <div>
+            <img src="people/ziwei.png" alt="Ziwei Liu" />
+            <div>
+              <a href="https://liuziwei7.github.io/">Ziwei Liu </a>
+            </div>
+            <div class="inst">Assistant Professor<br />NTU</div>
+          </div>
+        </div>
+        <div class="organizer-container">
+          <div>
+            <img src="people/yifeng.jpg" alt="Yifeng Jiang" />
+            <div>
+              <a href="https://cs.stanford.edu/~yifengj/">Yifeng Jiang </a>
+            </div>
+            <div class="inst">Ph.D Student<br />Stanford University</div>
+          </div>
+          <div lang="de">
+            <img src="people/vladimir.jpg" alt="Vladimir Guzov" />
+            <div>
+              <a href="https://virtualhumans.mpi-inf.mpg.de/people/Guzov.html"
+                >Vladimir Guzov</a
+              >
+            </div>
+            <div class="inst">Ph.D Student<br />University of Tübingen</div>
+          </div>
+          <div>
+            <img src="people/ed.jpg" alt="Edward Miller" />
+            <div>
+              <a href="https://www.linkedin.com/in/edwardrichardmiller/"
+                >Edward Miller</a
+              >
+            </div>
+            <div class="inst">Research Product Manager<br />Meta</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <div class="footer-container">
+          <div class="logo">
+            <svg width="300" height="80">
+              <defs>
+                <clipPath id="clip">
+                  <rect x="0" y="0" width="300" height="80" />
+                </clipPath>
+              </defs>
+              <image
+                href="css/cvpr.svg"
+                width="280"
+                height="100"
+                clip-path="url(#clip)"
+              />
+            </svg>
+          </div>
+          <div class="logo">
+            <svg width="300" height="80">
+              <defs>
+                <clipPath id="clip">
+                  <rect x="50" y="0" width="200" height="80" />
+                </clipPath>
+              </defs>
+              <image
+                href="css/meta.svg"
+                width="300"
+                height="80"
+                clip-path="url(#clip)"
+              />
+            </svg>
+          </div>
+          <div class="right">
+            <p>Contact</p>
+            <p>
+              <i class="fa-solid fa-envelope" style="color: #f4976c"></i>
+              &nbsp;lingni.ma@meta.com
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

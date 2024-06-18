@@ -69,12 +69,14 @@ h2 {
 }
 
 .overview-container p {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .overview-container li {
-  width: 800px;
+  width: 90%;
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -128,21 +130,10 @@ td {
   padding: 10px;
 }
 th:nth-child(3),
-/*
-td:nth-child(3) {
-  text-align: left;
-  color: #1f2833;
-}
-*/
 th {
   border-bottom: 2px solid black;
   font-weight: bold;
 }
-/*
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-*/
 
 .agenda-container {
   display: flex;

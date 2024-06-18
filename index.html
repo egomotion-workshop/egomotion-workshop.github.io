@@ -21,7 +21,10 @@
 
   <body>
     <div class="header">
-      <img src="css/teaser.jpg" alt="teaser figure" />
+      <picture>
+        <source srcset="css/teaser.jpg" type="image/jpeg" />
+        <img src="css/teaser.jpg" alt="teaser cover" class="responsive-image" />
+      </picture>
       <p>the 1st Workshop on</p>
       <h1 style="color: #f4976c; font-size: 28px">EgoMotion</h1>
       <h1 style="color: #d2fdff; font-size: 38px">
@@ -33,21 +36,9 @@
       </p>
       <p>
         <i class="fa-solid fa-location-dot fa-beat" style="color: #f4976c"></i
-        >&nbsp;CVPR 2024 Summit 429, Seattle WA, USA
+        >&nbsp;CVPR 2024, Meeting Room - Summit 429, Seattle WA, USA
       </p>
     </div>
-
-    <!--
-    <nav>
-      <ul>
-        <li><a href="#context">Context</a></li>
-        <li><a href="#speaker">Invited Speakers</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#organizer">Organizers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    -->
 
     <main>
       <!-- FIXME -->
@@ -92,6 +83,16 @@
       </section>
 
       <section id="speaker" class="light-block">
+        <div class="promo-container">
+          <picture>
+            <source srcset="people/egomotion-promo.webp" , type="image/webp" />
+            <img
+              src="people/egomotio-promo.webp"
+              alt="promo video from all speakers"
+              class="responsive-image"
+            />
+          </picture>
+        </div>
         <div class="speaker-container">
           <h2>Invited Speakers</h2>
         </div>
@@ -196,8 +197,8 @@
         <div class="agenda-container">
           <table>
             <colgroup>
-              <col style="width: 20%" />
-              <col style="width: 25%" />
+              <col style="width: 12%" />
+              <col style="width: 12%" />
               <col style="width: 55%" />
             </colgroup>
             <tr>
@@ -207,64 +208,103 @@
             </tr>
             <tr>
               <td>13:30 - 13:45</td>
-              <td>Welcome & Opening</td>
-              <td>Richard Newcombe</td>
+              <td>Opening</td>
+              <td><p class="speaker-highlight">Richard Newcombe</p></td>
             </tr>
             <tr>
               <td>13:45 - 14:15</td>
               <td>Invited Talk</td>
-              <td>Siyu Tang</td>
+              <td>
+                <p class="speaker-highlight">Siyu Tang</p>
+                <p>title (tbd)</p>
+                <p></p>
+              </td>
             </tr>
             <tr>
               <td>14:15 - 14:45</td>
               <td>Invited Talk</td>
-              <td>Christian Theobalt</td>
+              <td>
+                <p class="speaker-highlight">Christian Theobalt</p>
+                <p>title (tbd)</p>
+              </td>
             </tr>
             <tr>
               <td>14:45 - 15:15</td>
               <td>Invited Talk</td>
-              <td>Hanbyul Joo</td>
+              <td>
+                <p class="speaker-highlight">Hanbyul Joo</p>
+                <p>
+                  Towards Capturing Everyday Movements to Scale Up and Enrich
+                  Human Motion Data
+                </p>
+              </td>
             </tr>
             <tr>
               <td>15:15 - 15:30</td>
               <td>Break</td>
-              <td>&nbsp;</td>
+              <td>
+                <i class="fa-solid fa-fire fa-beat" style="color: #f4976c"></i>
+                &nbsp;Live demos with Quest and Project Aria
+              </td>
             </tr>
             <tr>
               <td>15:30 - 16:00</td>
               <td>Invited Talk</td>
-              <td>Lingni Ma, Yuting Ye</td>
+              <td>
+                <p class="speaker-highlight">Lingni Ma, Yuting Ye</p>
+                <p>Nymeria: Understanding Human Motion from Egocentric Data</p>
+              </td>
             </tr>
             <tr>
               <td>16:00 - 16:30</td>
               <td>Invited Talk</td>
-              <td>C. Karen Liu, Jiaman Li</td>
+              <td>
+                <p class="speaker-highlight">C. Karen Liu, Jiaman Li</p>
+                <p>title (tbd)</p>
+              </td>
             </tr>
             <tr>
               <td>16:30 - 17:00</td>
               <td>Invited Talk</td>
-              <td>Gerard Pons-Moll</td>
+              <td>
+                <p class="speaker-highlight">Gerard Pons-Moll</p>
+                <p>title (tbd)</p>
+              </td>
             </tr>
             <tr>
               <td>17:00 - 17:15</td>
               <td>Break</td>
-              <td>&nbsp;</td>
+              <td>
+                <i class="fa-solid fa-fire fa-beat" style="color: #f4976c"></i>
+                &nbsp;Live demos with Quest and Project Aria
+              </td>
             </tr>
 
             <tr>
               <td>17:15 - 17:28</td>
               <td>Deepdive</td>
-              <td>Manuel Kaufmann</td>
+              <td>
+                <p class="speaker-highlight">Manuel Kaufmann</p>
+                <p>Motion Capture with Electromagnetic Body-worn Sensors</p>
+              </td>
             </tr>
             <tr>
               <td>17:28 - 17:41</td>
               <td>Deepdive</td>
-              <td>Fangzhou Hong</td>
+              <td>
+                <p class="speaker-highlight">Fangzhou Hong</p>
+                <p>EgoLM: Multi-Modal Language Model of Egocentric Motions</p>
+              </td>
             </tr>
             <tr>
               <td>17:41 - 17:54</td>
-              <td>Deepdive & Live Demo</td>
-              <td>Xinyu Yi</td>
+              <td>Deepdive <br />& Live Demo</td>
+              <td>
+                <p class="speaker-highlight">Xinyu Yi</p>
+                <p>
+                  Egocentric Motion Capture with Sparse Inertial/Visual Sensors
+                </p>
+              </td>
             </tr>
             <tr>
               <td>17:55 - 18:00</td>

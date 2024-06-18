@@ -87,7 +87,8 @@ h2 {
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
@@ -139,7 +140,8 @@ th {
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
